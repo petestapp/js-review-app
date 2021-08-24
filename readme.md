@@ -26,12 +26,12 @@ Phase 2: input
 Phase 3: Search
 ---
 
-[] allow the user to start a search
+[x] allow the user to start a search
 
-[] allow the user to input height
+[x] allow the user to input height
 
-[] allow the user to input inversions
+[x] allow the user to input inversions
 
-[] allow the user to input manufacturer
+[x] allow the user to input manufacturer
 
-[] display all matches
+[/] display all matches

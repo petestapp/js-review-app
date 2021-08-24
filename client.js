@@ -10,18 +10,41 @@ while(continueInput){
         continueInput = false;
     }
 } // end while
+search();
 
 // addCoaster function
 function addCoaster(){
 // create object
     let tempCoaster = {};
 // get user inputs
-    tempCoaster.height = prompt(`What is the height classification?`)
-    tempCoaster.inversions = confirm(`Does it have inversions?`)
-    tempCoaster.name = prompt(`What is the name?`)
-    tempCoaster.manufacturer = prompt(`Who is manufacturer?`)
+    tempCoaster.name = prompt(`What is the name?`);
+    tempCoaster.height = prompt(`What is the height classification?`);
+    tempCoaster.inversions = confirm(`Does it have inversions?`);
+    // tempCoaster.manufacturer = prompt(`Who is manufacturer?`);
 // .push object to coasters
 coasters.push(tempCoaster);
-} // end function
+} // end addCoaster
+// console.log array
+console.log(`coasters:`, coasters);
 
-console.log(`coasters:`, coasters)
+// search function
+function search(){
+let matches = [];
+// allow user to start a search
+
+// allow user to input height
+let heightSearch = prompt(`What is the height category?`)
+// allow user to input inversions
+let inversionSearch = confirm(`Does it have inversions?`)
+// loop through array and search for matches
+for (let i = 0; i<coasters.length; i++){
+    if (coasters[i].height === heightSearch || coasters[i].inversions === inversionSearch){
+        matches.push(coasters[i]);
+    }
+}
+// display matches
+console.log(`matches:`, matches);
+for (i=0; i<matches.length; i++){
+    alert(`matches: ` + matches[i].name);
+    }
+} // end search
