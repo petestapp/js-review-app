@@ -11,17 +11,17 @@ Phase 1: Basic Setup
 Phase 2: input
 ---
 
-[] get height from user (subhyper = 0-200 ft, hyper = 200+ ft, giga = 300+ ft, strata = 400+ ft)
+[x] get height from user (subhyper = 0-200 ft, hyper = 200+ ft, giga = 300+ ft, strata = 400+ ft)
 
-[] get inversions from user
+[x] get inversions from user
 
-[] get name from user
+[x] get name from user
 
-[] get manufacturer
+[x] get manufacturer
 
-[] allow the user to input as many objects as they would like
+[x] allow the user to input as many objects as they would like
 
-[] console.log the inventory
+[x] console.log the inventory
 
 Phase 3: Search
 ---
